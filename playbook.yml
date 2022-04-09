@@ -1,7 +1,18 @@
 ---
-- name: "Test playbook run"
+- name: Test playbook run
   hosts: all
+
   tasks:
-  - name: "Debug"
+  - name: Debug
     ansible.builtin.debug:
-      msg: "Test debug"
+      msg: Test debug
+
+# - name: default-jdk
+#   hosts: both
+#   become: yes
+
+#   tasks:
+#   - name: Ensure java is present
+#     apt:
+#      name: default-jdk
+#      state: present
