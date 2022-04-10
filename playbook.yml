@@ -1,6 +1,7 @@
 ---
 - name: Test playbook run
   hosts: all
+  become: yes
 
   tasks:
   - name: Ensure maven is present
