@@ -3,6 +3,7 @@
   hosts: all
 
   tasks:
-  - name: Debug
-    debug:
-     msg: "Test debug"
+  - name: Ensure maven is present
+    apt:
+     name: maven
+     state: present
