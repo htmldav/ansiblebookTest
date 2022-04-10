@@ -20,3 +20,12 @@
     command: mvn --batch-mode --quiet install
     args:
       chdir: "/home/ubuntu/repos"
+
+  - name: "create image"
+    shell: | 
+      docker build -t diplom . 
+      docker tag diplom aldav99/diplom
+      echo "Gfdkjdcrfz25" | docker login --username aldav99 --password-stdin docker.io 
+      docker push aldav99/diplom
+    args:
+      chdir: "/home/ubuntu/repos"      
