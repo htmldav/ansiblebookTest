@@ -1,7 +1,6 @@
 ---
 - name: Test playbook run
   hosts: localhost
-  become: yes
 
   tasks:
   - name: Debug
