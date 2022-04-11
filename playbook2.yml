@@ -7,4 +7,4 @@
   - name: "Pull image"
     shell: |
       docker pull aldav99/diplom
-	    docker run -d -p 8080:8080 aldav99/diplom
+      docker run -d -p 8080:8080 aldav99/diplom
