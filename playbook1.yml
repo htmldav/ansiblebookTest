@@ -37,7 +37,7 @@
       chdir: "/home/ubuntu/repos"
 
   - name: "fetch diplom.tar"
-     fetch:
-       src: /home/aldav/repos/diplom.tar
-       dest: /home/aldav/
-       flat: true	 
+    fetch:
+      src: /home/aldav/repos/diplom.tar
+      dest: /home/aldav/
+      flat: true	 
