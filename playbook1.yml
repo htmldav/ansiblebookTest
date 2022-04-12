@@ -34,4 +34,10 @@
     shell: |
       docker save -o diplom.tar aldav99/diplom
     args:
-      chdir: "/home/ubuntu/repos"  
+      chdir: "/home/ubuntu/repos"
+
+  - name: "fetch diplom.tar"
+     fetch:
+       src: /home/aldav/repos/diplom.tar
+       dest: /home/aldav/
+       flat: true	 
