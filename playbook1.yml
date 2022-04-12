@@ -38,6 +38,6 @@
 
   - name: "fetch diplom.tar"
     fetch:
-      src: /home/aldav/repos/diplom.tar
+      src: /home/ubuntu/repos/diplom.tar
       dest: /home/aldav/
       flat: true	 
