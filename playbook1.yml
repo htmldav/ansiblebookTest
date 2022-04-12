@@ -25,7 +25,13 @@
     shell: | 
       docker build -t diplom . 
       docker tag diplom aldav99/diplom
-      echo "Gfdkjdcrfz25" | docker login --username aldav99 --password-stdin docker.io 
-      docker push aldav99/diplom
+      # echo "Gfdkjdcrfz25" | docker login --username aldav99 --password-stdin docker.io 
+      # docker push aldav99/diplom
     args:
-      chdir: "/home/ubuntu/repos"      
+      chdir: "/home/ubuntu/repos"
+      
+  - name: "create tar"
+    shell: |
+      docker save -o diplom.tar aldav99/diplom
+    args:
+      chdir: "/home/ubuntu/repos"  
